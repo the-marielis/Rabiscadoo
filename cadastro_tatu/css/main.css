@@ -45,7 +45,7 @@
 	padding: 0px; 
 	box-sizing: border-box;
 }
-/*---------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Estilos básicos para o menu */
 nav {
@@ -69,7 +69,7 @@ transition: all 0.3s ease; /* Transição para efeitos hover */
 nav a:hover {
 color: var(--cor1) /* Cor do texto ao passar o mouse */
 }
-/*------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 body {
   font-family: var(--fonte-padrao);
 	background-color: var(--cor0);
@@ -78,14 +78,14 @@ body {
 
 .container {
  position: relative;
- margin-top: 5%;
+ margin-top: 4%;
 }
-/*--------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .title {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-family: var(--fonte-cabeçalho);
   font-size: 25px;
-  font-weight: bolder;
+  margin: auto;
 }
 
 .login-button button {
@@ -137,13 +137,14 @@ body {
   width: 100%;
   border: none;
  }
-/*--------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .form {
   background-color: var(--cor5);
-  padding: 80px 70px;
-  width: 80%;
+  padding: 50px 70px;
+  width: 55%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 40px;
   justify-content: center;
   position: absolute;
   top: 50%;
@@ -152,7 +153,7 @@ body {
 }
 
 .form-header {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -168,31 +169,142 @@ body {
 }
 
 
-/*--------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .input-group {
-  padding: 10px;
+  padding: 0px 50px;
   
 }
 
 .input-group input {
   font-family: var(--fonte-padrao);
-  color: var(--cor5); 
+  letter-spacing: 1px;
+  font-weight: lighter;
+  color: var(--cor1); 
   padding: 10px;
+  border-radius:  10px;
 }
 
-.line1 input  {
-  padding-top: 1px;
-  padding-bottom: 1px;
+
+.line1  input, .line3 input  {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  width: 100%;
+
+}
+
+.line2 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+#CPF, #RG {
+  margin-left: 1%;
+  font-size: 15px;
+  padding-right: 3.1rem;
+  margin-bottom: 1%;
+}
+
+#nascimento, #CEP {
+  font-size: 15px;
+  padding-right: 4rem;
+}
+
+
+.line4 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 100%;
   font-size: 15px;
 }
 
-#nascimento, #CPF {
-  padding: 0 15%;
+
+#endereco {
+  padding-right: 40%;
+  margin-left: 1%;
+  font-size: 15px;
+  margin-bottom: 1%;
 }
 
+.line5 input {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 49%;
+  font-size: 15px;
+  padding-right: 5rem;
+  margin-bottom: 1%;
+}
+.line6 input {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 49%;
+  font-size: 15px;
+  padding-right: 5rem;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  
+}
 
+.line7 input {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  width: 49%;
+  font-size: 15px;
+  padding-right: 5rem;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  
+}
 
-/*------------------------------------------------------------*/
+/*mudando a cor do texto na placeholder*/
+::-webkit-input-placeholder {
+  color: var(--cor5);
+  opacity: 0.4;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: var(--cor5);
+  opacity: 0.4;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: var(--cor5);
+  opacity: 0.4;
+}
+
+:-ms-input-placeholder {  
+  color: var(--cor5);
+  opacity: 0.4; 
+}
+
+/*configurando o tipo do cadastro*/
+.tipo {
+  margin-top: 5% ;
+  margin-left: 1%;
+  width: 100%;
+  display: flex;
+  font-size: 18px;
+}
+
+.option {
+  margin-top: -30px;
+  margin-left: 12%;
+}
+
+.option input {
+  margin-right: 2%;
+}
+
+#tp-tatu {
+  margin-top: 2%;
+}
+
+#tp-tatu input {
+  margin-right: 2%;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .continue-button button {
   padding: 5px 20px;
   background-color: var(--cor0);
@@ -241,3 +353,19 @@ body {
  .continue-button button:hover::before {
   width: 100%;
  }
+ /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ .form-image {
+  margin-left: 70%;
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */
+ }
+
+ .form-image img {
+  margin-top: -3%;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+  position: absolute;
+}
