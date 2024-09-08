@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Avallon All Caps';
+    src: url('AvallonAllCaps.eot');
+    src: local('Avallon All Caps'), local('AvallonAllCaps'),
+        url('AvallonAllCaps.eot?#iefix') format('embedded-opentype'),
+        url('AvallonAllCaps.woff2') format('woff2'),
+        url('AvallonAllCaps.woff') format('woff'),
+        url('AvallonAllCaps.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avallon';
+    src: url('Avallon.eot');
+    src: local('Avallon'),
+        url('Avallon.eot?#iefix') format('embedded-opentype'),
+        url('Avallon.woff2') format('woff2'),
+        url('Avallon.woff') format('woff'),
+        url('Avallon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avallon Alt';
+    src: url('AvallonAlt.eot');
+    src: local('Avallon Alt'), local('AvallonAlt'),
+        url('AvallonAlt.eot?#iefix') format('embedded-opentype'),
+        url('AvallonAlt.woff2') format('woff2'),
+        url('AvallonAlt.woff') format('woff'),
+        url('AvallonAlt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
