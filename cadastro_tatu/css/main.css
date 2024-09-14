@@ -108,14 +108,13 @@ body {
   letter-spacing: 1px;
   font-family: var(--fonte-cabeçalho);
   font-size: 25px;
-  margin: auto;
+  margin: 0 20%;
 }
 
 .login-button button {
   padding: 5px 20px;
   background-color: var(--cor0);
   border-radius: 10px;
-
   border: none;
   z-index: 1;
   position: relative;
@@ -162,7 +161,7 @@ body {
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .form {
   background-color: var(--cor5);
-  padding-top: 3vh;
+  padding-top: 10vh;
   padding-bottom: 5vh;
   width: 55%;
   border-radius: 40px;
@@ -192,7 +191,7 @@ body {
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .input-group {
-  padding: 0px 50px;
+  padding: 0px 15%;
 }
 
 .input-group input {
@@ -245,11 +244,11 @@ body {
 
 
 #endereco {
-  padding-right: 40%;
+  padding-right: 10%;
   margin-left: 1%;
   font-size: 15px;
   margin-bottom: 1%;
-  width: 69%;
+  width: 61%;
 }
 
 .line5 input {
@@ -333,24 +332,23 @@ body {
   padding: 5px 20px;
   background-color: var(--cor0);
   border-radius: 10px;
-  margin-left: 80%;
+  margin-left: 70%;
   box-shadow: -3px 2px 1px #9831b8 ;
   border: none;
   z-index: 1;
   position: relative;
   font-weight: 1000;
-  font-size: 17px;
+  font-size: 20px;
   transition: all 250ms;
   overflow: hidden;
-
-  
 }
+
 .continue-button a {
   padding: 5px;
   text-decoration: none;
   color: var(--cor4);
   font-family: var(--fonte-padrao);
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 1px;
 }
 
