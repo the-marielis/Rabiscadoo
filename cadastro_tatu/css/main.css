@@ -60,7 +60,7 @@ nav a {
 color: var(--cor2);
 text-decoration: none;
 font-family: var(--fonte-cabeçalho);
-font-size: 20px;
+font-size: 18px;
 letter-spacing: 2px;
 margin: 5px 90px 0px 90px;
 transition: all 0.3s ease; /* Transição para efeitos hover */
@@ -100,15 +100,15 @@ body {
 
 .container {
  position: relative;
- margin-top: 4%;
+ margin-top: 25%;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .title {
   letter-spacing: 1px;
   font-family: var(--fonte-cabeçalho);
-  font-size: 25px;
-  margin: 0 20%;
+  font-size: 20px;
+  margin: 0 25%;
 }
 
 .login-button button {
@@ -161,15 +161,14 @@ body {
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .form {
   background-color: var(--cor5);
-  padding-top: 10vh;
-  padding-bottom: 5vh;
+  padding-top: 2%;
   width: 55%;
   border-radius: 40px;
   justify-content: center;
   position: relative;
-  margin-top: 53vh;
   top: 50%;
   left: 50%;
+  height: 85vh;
   transform: translate(-50%, -50%);
 }
 
@@ -191,7 +190,7 @@ body {
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .input-group {
-  padding: 0px 15%;
+  padding: 0px 10%;
 }
 
 .input-group input {
@@ -202,17 +201,24 @@ body {
   padding: 2%;
   border-radius:  10px;
   display:inline-flex;
+  margin: 0;
 }
 
 .line1  input, .line3 input  {
-  padding-top: 2.5%;
+  padding-top: 2%;
   padding-bottom: 1%;
-  font-size: 15px;
+  font-size: 13px;
   width: 100%;
 }
 
-.line2 {
+.line1 input {
   padding-top: 2.5%;
+  font-size: 13px;
+  padding-right: 5rem;
+}
+
+.line2 {
+  padding-top: 1%;
   padding-bottom: 1%;
   padding-right: 0;
 }
@@ -223,39 +229,45 @@ body {
 
 #CPF, #RG {
   margin-left: 1%;
-  font-size: 15px;
+  font-size: 13px;
   padding-right: 3.1rem; 
-  margin-bottom: 1%;
-  height: 15%;
+
 }
 
 #nascimento, #CEP {
-  font-size: 15px;
+  font-size: 13px;
   padding-right: 4rem;
-  margin-bottom: 1%;
 }
 
 
 .line4 {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 13px;
+}
+
+.line4 input {
   padding-top: 2.5%;
   padding-bottom: 1%;
-  font-size: 15px;
+  font-size: 13px;
+  padding-right: 5rem;
 }
 
 
 #endereco {
   padding-right: 10%;
   margin-left: 1%;
-  font-size: 15px;
-  margin-bottom: 1%;
-  width: 61%;
+  font-size: 13px;
+  width: 63%;
+  font-size: 13px;
+
 }
 
 .line5 input {
   padding-top: 2.5%;
   padding-bottom: 1%;
   width: 49%;
-  font-size: 15px;
+  font-size: 13px;
   padding-right: 5rem;
   margin-bottom: 1%;
 }
@@ -264,17 +276,15 @@ body {
   padding-top: 2.5%;
   padding-bottom: 1%;
   width: 49%;
-  font-size: 15px;
+  font-size: 13px;
   padding-right: 5rem;
-  margin-bottom: 1%;
-  margin-top: 1%;
 }
 
 .line7 input {
   padding-top: 2.5%;
   padding-bottom: 1%;
   width: 49%;
-  font-size: 15px;
+  font-size: 13px;
   padding-right: 5rem;
   margin-bottom: 1%;
   margin-top: 1%;
@@ -300,19 +310,26 @@ body {
   color: var(--cor5);
   opacity: 0.4; 
 }
+/*------------------------------------------------------------------------------*/
 
 /*configurando o tipo do cadastro*/
 .tipo {
-  margin-top: 5% ;
+  margin-top: 10% ;
   margin-left: 1%;
-  width: 100%;
+  width: 50%;
   display: flex;
   font-size: 18px;
 }
 
+.tp-cadastro {
+  width: 60%;
+}
+
 .option {
   margin-top: -30px;
-  margin-left: 12%;
+  margin-left: 20%;
+  width: 50%;
+  margin-bottom: 5%;
 }
 
 .option input {
@@ -328,17 +345,23 @@ body {
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.continue-button  {
+  width: 50%;
+  margin-left: 30vh;
+  margin-top: -7vh;
+}
+
 .continue-button button {
   padding: 5px 20px;
   background-color: var(--cor0);
   border-radius: 10px;
-  margin-left: 70%;
+  margin-left: 100%;
+  width: 35%;
   box-shadow: -3px 2px 1px #9831b8 ;
   border: none;
   z-index: 1;
   position: relative;
-  font-weight: 1000;
-  font-size: 20px;
+  font-weight: 1000;  font-size: 17px;
   transition: all 250ms;
   overflow: hidden;
 }
@@ -378,11 +401,12 @@ body {
  /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .form-image {
   position: absolute;
-  top: 3%;
+  top: 10%;
   right: 0;
-  width: 28%; 
+  width: 30%; 
   z-index: 1; /* Garante que ela fique sobre o formulário */
-  border-radius: 50%;
+  margin-right: -7vh;
+
 }
 
 .form-image img {
