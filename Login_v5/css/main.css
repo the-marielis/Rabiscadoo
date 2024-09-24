@@ -32,12 +32,13 @@
   --cor2: #FFFFFF;
   --cor3: #696969;
   --cor4: #E0E0E0;
+  --cor5: #4b0082;
+  --cor7: #9831b8;
 
   --fonte-padrao: 'Prosto_sans', sans-serif;
   --fonte-destaque: 'Avallon', serif;
   --fonte-cabeçalho: 'Lakes_neue'; 
 }
-
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
@@ -58,11 +59,10 @@ body, html {
 /*---------------------------------------------*/
 
 /* Estilos básicos para o menu */
-nav {
-			
+nav {	
   display: flex;
   padding: 0px;
- position: fixed;
+  position: fixed;
   top: 0;
 }
 
@@ -70,36 +70,37 @@ nav a {
 color: var(--cor2);
 text-decoration: none;
 font-family: var(--fonte-cabeçalho);
-font-size: 20px;
+font-size: 18px;
 letter-spacing: 2px;
 margin: 5px 90px 0px 90px;
 transition: all 0.3s ease; /* Transição para efeitos hover */
 }
 
 nav a:hover {
-color: var(--cor1) /* Cor do texto ao passar o mouse */
+color: var(--cor1);
+text-decoration: none;
 }
 
-a {
-	font-family: var(--fonte-padrao);
-	font-size: 14px;
-	line-height: 1.7;
-	color: var(--cor2);
-	margin: 0px;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
+#entrar {
+  justify-content: center; 
+  align-items: center;
+  margin-top: 0.2%;
 }
 
-a:focus {
-	outline: none !important;
+#entrar::after {
+  content: '';
+  display: block;
+  width: 60%; 
+  height: 0.3rem; /* Altura do risquinho */
+  background-color: var(--cor7); /* Cor do risquinho */
+  margin-top: 1%;
+  margin-left: auto; 
+  margin-right: auto;
+  transition: 2s;
 }
 
-a:hover {
-	text-decoration: none;
-  color: var(--cor1);
-  border-color: var(--cor1);
+#entrar:hover::after {
+  width: 100%; /* Mantém o efeito ao passar o mouse */
 }
 
 /*---------------------------------------------*/
