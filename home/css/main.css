@@ -31,6 +31,7 @@
     --cor3: #696969;
     --cor4: #E0E0E0;
     --cor5: #4b0082;
+    --cor7: #9831b8;
   
     --fonte-padrao: 'Prosto_sans', sans-serif;
     --fonte-destaque: 'Avallon', serif;
@@ -46,9 +47,8 @@
       box-sizing: border-box;
   }
   /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  
-  /* Estilos básicos para o menu */
-  nav {	
+/* Estilos básicos para o menu */
+nav {	
     display: flex;
     padding: 0px;
     position: fixed;
@@ -59,14 +59,37 @@
   color: var(--cor2);
   text-decoration: none;
   font-family: var(--fonte-cabeçalho);
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 2px;
   margin: 5px 90px 0px 90px;
   transition: all 0.3s ease; /* Transição para efeitos hover */
   }
   
-nav a:hover {
-  color: var(--cor1) /* Cor do texto ao passar o mouse */
+  nav a:hover {
+  color: var(--cor1);
+  text-decoration: none;
+  }
+  
+#home {
+    justify-content: center; 
+    align-items: center;
+    margin-top: 0.2%;
+  }
+  
+#home::after {
+    content: '';
+    display: block;
+    width: 60%; 
+    height: 0.3rem; /* Altura do risquinho */
+    background-color: var(--cor7); /* Cor do risquinho */
+    margin-top: 1%;
+    margin-left: auto; 
+    margin-right: auto;
+    transition: 2s;
+  }
+  
+#home:hover::after {
+    width: 100%; /* Mantém o efeito ao passar o mouse */
   }
 
 /*--------------------------------------------------------------------------------------------------------------------------*/
@@ -200,4 +223,43 @@ body {
 
 #radio5:checked ~ .navigation-auto .auto-btn5 {
     background-color: var(--cor5);
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+    .slider {
+        max-width: 90%; /* Aumenta a largura máxima para 100% em telas menores */
+		height: auto;
+    }	
+	.slides {
+        max-width: 1000%;
+        height: auto;
+    }
+}
+
+.img-fundo {
+        position: fixed;
+        right: -25%;
+        bottom: 0; 
+        width: 60%; 
+        z-index: -1; 
+      }
+      
+.img-fundo img {
+        width: 60%;
+        height: auto;
+        object-fit: cover; 
+      }
+
+.entrar button {
+    background-color: var(--cor7);
+    border-radius: 30%;
+    border: none;
+    padding: 10%;
+    margin-right: 5vw;
+}
+.entrar a {
+    text-decoration: none;
+    color: var(--cor2);
+    background-color: var(--cor7);
 }
